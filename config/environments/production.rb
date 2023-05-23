@@ -2,7 +2,6 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # config.hosts << "4d0a-41-90-179-83.ngrok-free.app"
-  config.hosts << "pesapal-api-consumer-production.up.railway.app"
   
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -25,7 +24,7 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
+  config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present? || ENV["RENDER"].present?
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass

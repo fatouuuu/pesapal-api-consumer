@@ -2,7 +2,6 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # config.hosts << "4d0a-41-90-179-83.ngrok-free.app"
-  config.hosts << "pesapal-api-consumer-production.up.railway.app"
 
   
   # Settings specified here will take precedence over those in config/application.rb.
