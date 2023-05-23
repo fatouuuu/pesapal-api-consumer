@@ -36,3 +36,5 @@
 
 # exclude JWT secret key from version control 
 .env
+
+/config/credentials/production.key
