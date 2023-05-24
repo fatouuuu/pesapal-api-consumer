@@ -54,7 +54,7 @@ This is a Ruby on Rails API that consumes Pesapal APIs. The API is able to get t
 8. Copy the HTTPS Forwarding URL provided by ngrok, it should look something like **`https://<some-random-characters>.ngrok.io`**.
 9. Update the **`config/environments/development.rb`** file with the HTTPS URL from ngrok as shown below:
 
-        ```ruby
+        ```
         Rails.application.configure do
         # ... other configurations
     
@@ -70,14 +70,14 @@ The API uses JWT Tokens for authentication. The `authorization` endpoint in the 
 
 To authenticate with the Pesapal API and obtain a JWT token, follow these steps:
 
-Send a POST request to the /pesapal/authorization endpoint of the application.
+Send a POST request to the `/pesapal/authorization` endpoint of the application.
 Include your Pesapal credentials (consumer key and consumer secret) as parameters in the request body.
 Upon successful authentication, the API will return a response containing a JWT token.
 Once a response is sent back, the JWT token is saved in sessions and is used in subsequent requests to other API endpoints.
 
 ### Registering the IPN
 
-Send a POST request to the /pesapal/register_ipn endpoint of the application.
+Send a POST request to the `/pesapal/register_ipn` endpoint of the application.
 Include the necessary parameters (such as the notification_url) in the request body.
 Ensure that the notification_url parameter points to the endpoint in your application where you want to receive the IPN notifications.
 Upon successful registration, the API will respond with a success message with details about the IPN registration.
@@ -87,7 +87,7 @@ Once a response is sent back, the IPN ID is saved in sessions and is used in sub
 
 To obtain the Pesapal iframe URL, which allows users to make payments, follow these steps:
 
-Send a POST request to the /pesapal/iframe endpoint of your application.
+Send a POST request to the `/pesapal/iframe` endpoint of your application.
 Include the required parameters (such as amount, description, type, etc.) in the request body.
 Specify the necessary details related to the payment, such as the transaction amount and a description.
 Ensure that you have a valid JWT token included in the Authorization header of the request, this is already handled by the API and will be retrieved when making request that require authentication.
