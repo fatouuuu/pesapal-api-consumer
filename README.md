@@ -18,8 +18,6 @@ This is a Ruby on Rails API that consumes Pesapal APIs. The API is able to get t
 - Ruby 2.7+
 - Rails 6.0+
 - A Pesapal Merchant Account (To obtain your consumer_key and consumer_secret from Pesapal)
-- **[RubyGems](https://rubygems.org/pages/download)** (for installing Ruby gems and dependencies)
-- **[Ruby on Rails](https://guides.rubyonrails.org/v5.0/getting_started.html)** (for running the API)
 - **[Postgresql](https://www.postgresql.org/download/)** (for the database)
 - **[Postman](https://www.postman.com/downloads/)** (for testing the API)
 - **[Ngrok](https://ngrok.com/download)** (for exposing your local server endpoints to the internet)
