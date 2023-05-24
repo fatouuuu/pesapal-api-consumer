@@ -1,6 +1,6 @@
 # **API Integration with Pesapal API v3.0**
 
-This is a guide on how to run the API, authenticate with Pesapal APIs, and get the Pesapal iframe URL using the API.
+This is a guide on how to run the API, authenticate with Pesapal API v3.0, and get the Pesapal iframe URL as one of the response properties.
 
 ## **Table of Contents**
 
